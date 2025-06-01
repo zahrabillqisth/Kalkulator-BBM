@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator BBM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Perhitungan BBM</h1>
+    
+    <div class="card">
+      <label for="jarak">Jarak Tempuh (km):</label>
+      <input type="number" id="jarak" placeholder="Misal: 120">
+
+      <label for="pemakaian">Konsumsi Bahan Bakar Kendaraan (km/liter):</label>
+      <select id="pemakaian">
+        <option value="31">31 km/l</option>
+        <option value="20">20 km/l</option>
+        <option value="15">15 km/l</option>
+        <option value="12">12 km/l</option>
+        <option value="8">8 km/l</option>
+        <option value="40">40 km/l</option>
+        <option value="35">35 km/l</option>
+      </select>
+
+      <label for="harga">Harga BBM per Liter (Rp):</label>
+      <input type="number" id="harga" placeholder="Misal: 13500">
+
+      <button onclick="hitungBBM()">Hitung</button>
+
+      <div id="hasil" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
